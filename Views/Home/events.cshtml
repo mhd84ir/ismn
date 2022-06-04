@@ -1,0 +1,1281 @@
+<div class="card">
+            <div class="card-header">
+              <h4 id="basic-forms" class="card-title">Event search</h4>
+              
+            </div>
+            <div class="card-content collapse show" aria-expanded="true">
+             
+              
+              <div class="card-body">
+                <div><h6>Filters</h6></div>
+                <div class="d-flex flex-row">
+                  <div class="p-2"> 
+                    <div style="padding-left: 12px">
+                      <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item">
+                          <a
+                            class="nav-link active"
+                            id="Quicksearch-tab"
+                            data-toggle="tab"
+                            href="#Quicksearch"
+                            role="tab"
+                            aria-controls="Quicksearch"
+                            aria-selected="true"
+                            >Quick search</a
+                          >
+                        </li>
+                        <li class="nav-item">
+                          <a
+                            class="nav-link"
+                            id="Geophysicalmetadata-tab"
+                            data-toggle="tab"
+                            href="#Geophysicalmetadata"
+                            role="tab"
+                            aria-controls="Geophysicalmetadata"
+                            aria-selected="false"
+                            >Geophysical metadata</a
+                          >
+                        </li>
+                        <li class="nav-item">
+                          <a
+                            class="nav-link"
+                            id="Geographicmetadata-tab"
+                            data-toggle="tab"
+                            href="#Geographicmetadata"
+                            role="tab"
+                            aria-controls="Geographicmetadata"
+                            aria-selected="false"
+                            >Geographic metadata</a
+                          >
+                        </li>
+                        <li class="nav-item">
+                          <a
+                            class="nav-link"
+                            id="Eventsprestation-tab"
+                            data-toggle="tab"
+                            href="#Eventsprestation"
+                            role="tab"
+                            aria-controls="Eventsprestation"
+                            aria-selected="false"
+                            >Events pre station</a
+                          >
+                        </li>
+                      </ul>
+                      <div class="tab-content" id="myTabContent">
+                        <div
+                          class="tab-pane fade show active"
+                          id="Quicksearch"
+                          role="tabpanel"
+                          aria-labelledby="Quicksearch-tab"
+                          style="margin-right: 15px"
+                        >
+                          <div class="row">
+                            <div class="col-sm-6">
+                              <label for="">ESM ID</label>
+                              <input
+                                class="form-control"
+                                type="text"
+                                placeholder="Contains"
+                              />
+                            </div>
+                            <div class="col-sm-6">
+                              <label for="">Event name</label>
+                              <input
+                                class="form-control"
+                                type="text"
+                                placeholder="Contains"
+                              />
+                            </div>
+                          </div>
+
+                          <div class="row">
+                            <div class="col-sm-6">
+                              <br />
+                              <label for="">Date Time</label>
+                              <input class="form-control" type="date" />
+                            </div>
+                            <div class="col-sm-6">
+                              <br />
+                              <label for=""><br /></label>
+                              <input class="form-control" type="date" />
+                            </div>
+                          </div>
+
+                          <div class="row">
+                            <div class="col-sm-6">
+                              <br />
+                              <label for="">Number of records</label>
+                              <input class="form-control" type="text" />
+                            </div>
+                          </div>
+
+                          <hr />
+                          <div class="row">
+                            <div class="col-sm-6">
+                              <button class="btn btn-primary">Search</button>
+                              <button class="btn btn-success">
+                                New search
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="tab-pane fade"
+                          id="Geophysicalmetadata"
+                          role="tabpanel"
+                          aria-labelledby="Geophysicalmetadata-tab"
+                          style="margin-right: 15px"
+                        >
+                          <div class="row">
+                            <div class="col-sm-6">
+                              <label for="">Hypocentral depth [km]</label>
+                              <input
+                                class="form-control"
+                                type="text"
+                                placeholder="From"
+                              />
+                            </div>
+                            <div class="col-sm-6">
+                              <label for=""><br /></label>
+                              <input
+                                class="form-control"
+                                type="text"
+                                placeholder="To"
+                              />
+                            </div>
+                          </div>
+                          <br />
+                          <div class="row">
+                            <div class="col-sm-6">
+                              <label for="">Magnitude</label>
+                              <input
+                                class="form-control"
+                                type="text"
+                                placeholder="From"
+                              />
+                            </div>
+                            <div class="col-sm-6">
+                              <label for=""><br /></label>
+                              <input
+                                class="form-control"
+                                type="text"
+                                placeholder="To"
+                              />
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-12">
+                              <br />
+                              <label for="">Style of faulting</label>
+                              <select
+                                class="form-control ng-pristine ng-valid ng-touched"
+                                id="fm_type_code"
+                                name="fm_type_code"
+                              >
+                                <!---->
+                                <option value="" class="ng-star-inserted">
+                                  -- Any values --
+                                </option>
+                                <option value="NF" class="ng-star-inserted">
+                                  Normal faulting
+                                </option>
+                                <option value="O" class="ng-star-inserted">
+                                  Oblique
+                                </option>
+                                <option value="NS" class="ng-star-inserted">
+                                  Predominately normal with strike-slip
+                                  component
+                                </option>
+                                <option value="TS" class="ng-star-inserted">
+                                  Predominately thrust with strike-slip
+                                  component
+                                </option>
+                                <option value="SS" class="ng-star-inserted">
+                                  Strike-slip faulting
+                                </option>
+                                <option value="TF" class="ng-star-inserted">
+                                  Thrust faulting
+                                </option>
+                                <option value="U" class="ng-star-inserted">
+                                  Unknown
+                                </option>
+                              </select>
+                              <hr />
+                            </div>
+                          </div>
+
+                          <div class="row">
+                            <div class="col-sm-6">
+                              <button class="btn btn-primary">Search</button>
+
+                              <button class="btn btn-success">
+                                New search
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="tab-pane fade"
+                          id="Geographicmetadata"
+                          role="tabpanel"
+                          aria-labelledby="Geographicmetadata-tab"
+                          style="margin-right: 15px"
+                        >
+                          <div class="row">
+                            <div class="col-sm-6">
+                              <label for="">Latitude (e.g. 45.27)</label>
+                              <input
+                                class="form-control"
+                                type="text"
+                                placeholder="From"
+                              />
+                            </div>
+                            <div class="col-sm-6">
+                              <label for=""><br /></label>
+                              <input
+                                class="form-control"
+                                type="text"
+                                placeholder="To"
+                              />
+                            </div>
+                          </div>
+                          <br />
+                          <div class="row">
+                            <div class="col-sm-6">
+                              <label for="">Longitude (e.g. 12.7)</label>
+                              <input
+                                class="form-control"
+                                type="text"
+                                placeholder="From"
+                              />
+                            </div>
+                            <div class="col-sm-6">
+                              <label for=""><br /></label>
+                              <input
+                                class="form-control"
+                                type="text"
+                                placeholder="To"
+                              />
+                            </div>
+                          </div>
+                          <br />
+                          <div class="row">
+                            <div class="col-sm-6">
+                              <label for="">Country</label>
+                              <select
+                                class="form-control ng-pristine ng-valid ng-touched"
+                                id="nation_code"
+                                name="nation_code"
+                              >
+                                <!---->
+                                <option value="" class="ng-star-inserted">
+                                  -- Any values --
+                                </option>
+                                <option
+                                  value="NUL"
+                                  class="ng-star-inserted"
+                                ></option>
+                                <option value="AL" class="ng-star-inserted">
+                                  Albania
+                                </option>
+                                <option value="DZ" class="ng-star-inserted">
+                                  Algeria
+                                </option>
+                                <option value="AS" class="ng-star-inserted">
+                                  American Samoa
+                                </option>
+                                <option value="AQ" class="ng-star-inserted">
+                                  Antarctica
+                                </option>
+                                <option value="AG" class="ng-star-inserted">
+                                  Antigua and Barbuda
+                                </option>
+                                <option value="AR" class="ng-star-inserted">
+                                  Argentina
+                                </option>
+                                <option value="AM" class="ng-star-inserted">
+                                  Armenia
+                                </option>
+                                <option value="AU" class="ng-star-inserted">
+                                  Australia
+                                </option>
+                                <option value="AT" class="ng-star-inserted">
+                                  Austria
+                                </option>
+                                <option value="AZ" class="ng-star-inserted">
+                                  Azerbaijan
+                                </option>
+                                <option value="BD" class="ng-star-inserted">
+                                  Bangladesh
+                                </option>
+                                <option value="BB" class="ng-star-inserted">
+                                  Barbados
+                                </option>
+                                <option value="BM" class="ng-star-inserted">
+                                  Bermuda
+                                </option>
+                                <option value="BT" class="ng-star-inserted">
+                                  Bhutan
+                                </option>
+                                <option value="BO" class="ng-star-inserted">
+                                  Bolivia
+                                </option>
+                                <option value="BA" class="ng-star-inserted">
+                                  Bosnia and Herzegovina
+                                </option>
+                                <option value="BR" class="ng-star-inserted">
+                                  Brazil
+                                </option>
+                                <option value="VG" class="ng-star-inserted">
+                                  British Virgin Islands
+                                </option>
+                                <option value="BG" class="ng-star-inserted">
+                                  Bulgaria
+                                </option>
+                                <option value="CA" class="ng-star-inserted">
+                                  Canada
+                                </option>
+                                <option value="BQ" class="ng-star-inserted">
+                                  Caribbean Netherlands
+                                </option>
+                                <option value="KY" class="ng-star-inserted">
+                                  Cayman Islands
+                                </option>
+                                <option value="CL" class="ng-star-inserted">
+                                  Chile
+                                </option>
+                                <option value="CN" class="ng-star-inserted">
+                                  China
+                                </option>
+                                <option value="CO" class="ng-star-inserted">
+                                  Colombia
+                                </option>
+                                <option value="CR" class="ng-star-inserted">
+                                  Costa Rica
+                                </option>
+                                <option value="HR" class="ng-star-inserted">
+                                  Croatia
+                                </option>
+                                <option value="CU" class="ng-star-inserted">
+                                  Cuba
+                                </option>
+                                <option value="CY" class="ng-star-inserted">
+                                  Cyprus
+                                </option>
+                                <option value="CZ" class="ng-star-inserted">
+                                  Czech Republic
+                                </option>
+                                <option value="DJ" class="ng-star-inserted">
+                                  Djibouti
+                                </option>
+                                <option value="DM" class="ng-star-inserted">
+                                  Dominica
+                                </option>
+                                <option value="DO" class="ng-star-inserted">
+                                  Dominican Republic
+                                </option>
+                                <option value="EC" class="ng-star-inserted">
+                                  Ecuador
+                                </option>
+                                <option value="EG" class="ng-star-inserted">
+                                  Egypt
+                                </option>
+                                <option value="SV" class="ng-star-inserted">
+                                  El Salvador
+                                </option>
+                                <option value="ER" class="ng-star-inserted">
+                                  Eritrea
+                                </option>
+                                <option value="ET" class="ng-star-inserted">
+                                  Ethiopia
+                                </option>
+                                <option value="FR" class="ng-star-inserted">
+                                  France
+                                </option>
+                                <option value="GE" class="ng-star-inserted">
+                                  Georgia
+                                </option>
+                                <option value="DE" class="ng-star-inserted">
+                                  Germany
+                                </option>
+                                <option value="GR" class="ng-star-inserted">
+                                  Greece
+                                </option>
+                                <option value="GD" class="ng-star-inserted">
+                                  Grenada
+                                </option>
+                                <option value="GP" class="ng-star-inserted">
+                                  Guadeloupe
+                                </option>
+                                <option value="GU" class="ng-star-inserted">
+                                  Guam
+                                </option>
+                                <option value="GT" class="ng-star-inserted">
+                                  Guatemala
+                                </option>
+                                <option value="HT" class="ng-star-inserted">
+                                  Haiti
+                                </option>
+                                <option value="HN" class="ng-star-inserted">
+                                  Honduras
+                                </option>
+                                <option value="HK" class="ng-star-inserted">
+                                  Hong Kong
+                                </option>
+                                <option value="HU" class="ng-star-inserted">
+                                  Hungary
+                                </option>
+                                <option value="IS" class="ng-star-inserted">
+                                  Iceland
+                                </option>
+                                <option value="IN" class="ng-star-inserted">
+                                  India
+                                </option>
+                                <option value="ID" class="ng-star-inserted">
+                                  Indonesia
+                                </option>
+                                <option value="IR" class="ng-star-inserted">
+                                  Iran
+                                </option>
+                                <option value="IQ" class="ng-star-inserted">
+                                  Iraq
+                                </option>
+                                <option value="IL" class="ng-star-inserted">
+                                  Israel
+                                </option>
+                                <option value="IT" class="ng-star-inserted">
+                                  Italy
+                                </option>
+                                <option value="JM" class="ng-star-inserted">
+                                  Jamaica
+                                </option>
+                                <option value="JP" class="ng-star-inserted">
+                                  Japan
+                                </option>
+                                <option value="JO" class="ng-star-inserted">
+                                  Jordan
+                                </option>
+                                <option value="KZ" class="ng-star-inserted">
+                                  Kazakhstan
+                                </option>
+                                <option value="KE" class="ng-star-inserted">
+                                  Kenya
+                                </option>
+                                <option value="XK" class="ng-star-inserted">
+                                  Kosovo
+                                </option>
+                                <option value="KG" class="ng-star-inserted">
+                                  Kyrgyzstan
+                                </option>
+                                <option value="LA" class="ng-star-inserted">
+                                  Laos
+                                </option>
+                                <option value="LB" class="ng-star-inserted">
+                                  Lebanon
+                                </option>
+                                <option value="LI" class="ng-star-inserted">
+                                  Liechtenstein
+                                </option>
+                                <option value="MK" class="ng-star-inserted">
+                                  Macedonia (FYROM)
+                                </option>
+                                <option value="MT" class="ng-star-inserted">
+                                  Malta
+                                </option>
+                                <option value="MQ" class="ng-star-inserted">
+                                  Martinique
+                                </option>
+                                <option value="YT" class="ng-star-inserted">
+                                  Mayotte
+                                </option>
+                                <option value="MX" class="ng-star-inserted">
+                                  Mexico
+                                </option>
+                                <option value="MD" class="ng-star-inserted">
+                                  Moldova
+                                </option>
+                                <option value="MC" class="ng-star-inserted">
+                                  Monaco
+                                </option>
+                                <option value="MN" class="ng-star-inserted">
+                                  Mongolia
+                                </option>
+                                <option value="ME" class="ng-star-inserted">
+                                  Montenegro
+                                </option>
+                                <option value="MS" class="ng-star-inserted">
+                                  Montserrat
+                                </option>
+                                <option value="MA" class="ng-star-inserted">
+                                  Morocco
+                                </option>
+                                <option value="NA" class="ng-star-inserted">
+                                  Namibia
+                                </option>
+                                <option value="NP" class="ng-star-inserted">
+                                  Nepal
+                                </option>
+                                <option value="NC" class="ng-star-inserted">
+                                  New Caledonia
+                                </option>
+                                <option value="NZ" class="ng-star-inserted">
+                                  New Zealand
+                                </option>
+                                <option value="NI" class="ng-star-inserted">
+                                  Nicaragua
+                                </option>
+                                <option value="MP" class="ng-star-inserted">
+                                  Northern Mariana Islands
+                                </option>
+                                <option value="NO" class="ng-star-inserted">
+                                  Norway
+                                </option>
+                                <option value="PK" class="ng-star-inserted">
+                                  Pakistan
+                                </option>
+                                <option value="PA" class="ng-star-inserted">
+                                  Panama
+                                </option>
+                                <option value="PG" class="ng-star-inserted">
+                                  Papua New Guinea
+                                </option>
+                                <option value="PE" class="ng-star-inserted">
+                                  Peru
+                                </option>
+                                <option value="PH" class="ng-star-inserted">
+                                  Philippines
+                                </option>
+                                <option value="PL" class="ng-star-inserted">
+                                  Poland
+                                </option>
+                                <option value="PT" class="ng-star-inserted">
+                                  Portugal
+                                </option>
+                                <option value="PR" class="ng-star-inserted">
+                                  Puerto Rico
+                                </option>
+                                <option value="MM" class="ng-star-inserted">
+                                  Republic of the Union of Myanmar
+                                </option>
+                                <option value="RO" class="ng-star-inserted">
+                                  Romania
+                                </option>
+                                <option value="RU" class="ng-star-inserted">
+                                  Russia
+                                </option>
+                                <option value="BL" class="ng-star-inserted">
+                                  Saint Barthélemy
+                                </option>
+                                <option value="KN" class="ng-star-inserted">
+                                  Saint Kitts and Nevis
+                                </option>
+                                <option value="MF" class="ng-star-inserted">
+                                  Saint Martin
+                                </option>
+                                <option value="WS" class="ng-star-inserted">
+                                  Samoa
+                                </option>
+                                <option value="SM" class="ng-star-inserted">
+                                  San Marino
+                                </option>
+                                <option value="RS" class="ng-star-inserted">
+                                  Serbia
+                                </option>
+                                <option value="SG" class="ng-star-inserted">
+                                  Singapore
+                                </option>
+                                <option value="SX" class="ng-star-inserted">
+                                  Sint Maarten
+                                </option>
+                                <option value="SI" class="ng-star-inserted">
+                                  Slovenia
+                                </option>
+                                <option value="SB" class="ng-star-inserted">
+                                  Solomon Islands
+                                </option>
+                                <option value="SO" class="ng-star-inserted">
+                                  Somalia
+                                </option>
+                                <option value="KR" class="ng-star-inserted">
+                                  South Korea
+                                </option>
+                                <option value="ES" class="ng-star-inserted">
+                                  Spain
+                                </option>
+                                <option value="SJ" class="ng-star-inserted">
+                                  Svalbard and Jan Mayen
+                                </option>
+                                <option value="CH" class="ng-star-inserted">
+                                  Switzerland
+                                </option>
+                                <option value="SY" class="ng-star-inserted">
+                                  Syria
+                                </option>
+                                <option value="TW" class="ng-star-inserted">
+                                  Taiwan
+                                </option>
+                                <option value="TJ" class="ng-star-inserted">
+                                  Tajikistan
+                                </option>
+                                <option value="TZ" class="ng-star-inserted">
+                                  Tanzania
+                                </option>
+                                <option value="TH" class="ng-star-inserted">
+                                  Thailand
+                                </option>
+                                <option value="TL" class="ng-star-inserted">
+                                  Timor-Leste
+                                </option>
+                                <option value="TO" class="ng-star-inserted">
+                                  Tonga
+                                </option>
+                                <option value="TT" class="ng-star-inserted">
+                                  Trinidad and Tobago
+                                </option>
+                                <option value="TR" class="ng-star-inserted">
+                                  Turkey
+                                </option>
+                                <option value="TM" class="ng-star-inserted">
+                                  Turkmenistan
+                                </option>
+                                <option value="TC" class="ng-star-inserted">
+                                  Turks and Caicos Islands
+                                </option>
+                                <option value="UA" class="ng-star-inserted">
+                                  Ukraine
+                                </option>
+                                <option value="US" class="ng-star-inserted">
+                                  United States
+                                </option>
+                                <option value="VI" class="ng-star-inserted">
+                                  U.S. Virgin Islands
+                                </option>
+                                <option value="UZ" class="ng-star-inserted">
+                                  Uzbekistan
+                                </option>
+                                <option value="VU" class="ng-star-inserted">
+                                  Vanuatu
+                                </option>
+                                <option value="VE" class="ng-star-inserted">
+                                  Venezuela
+                                </option>
+                                <option value="VN" class="ng-star-inserted">
+                                  Vietnam
+                                </option>
+                                <option value="YE" class="ng-star-inserted">
+                                  Yemen
+                                </option>
+                                <option value="ZM" class="ng-star-inserted">
+                                  Zambia
+                                </option>
+                              </select>
+                            </div>
+                            <div class="col-sm-6">
+                              <label for="">Region</label>
+                              <input class="form-control" type="text" />
+                            </div>
+                          </div>
+                          <br />
+                          <div class="row">
+                            <div class="col-sm-6">
+                              <label for="">Municipality</label>
+                              <input
+                                class="form-control"
+                                type="text"
+                                placeholder="Contains"
+                              />
+                            </div>
+                          </div>
+                          <hr />
+                          <div class="row">
+                            <div class="col-sm-6">
+                              <button class="btn btn-primary">Search</button>
+                              <button class="btn btn-success">
+                                New search
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="tab-pane fade"
+                          id="Eventsprestation"
+                          role="tabpanel"
+                          aria-labelledby="Eventsprestation-tab"
+                        >
+                          <div class="row" style="padding-right: 15px">
+                            <div class="col-sm-12">
+                              <label for="">Network code</label>
+                              <select
+                                class="form-control spaziatura_fissa ng-pristine ng-valid ng-touched"
+                                id="net_code"
+                                name="internal_net_code"
+                              >
+                                <!---->
+                                <option value="" class="ng-star-inserted">
+                                  -- Any values --
+                                </option>
+                                <option
+                                  value="1E_2018"
+                                  class="ng-star-inserted"
+                                >
+                                  1E - GSC-BCOGC Induced Seismicity Study
+                                  (1E_2018)
+                                </option>
+                                <option
+                                  value="1J_2021"
+                                  class="ng-star-inserted"
+                                >
+                                  1J - FocusX temporary land-network (FXland)
+                                  (1J_2021)
+                                </option>
+                                <option
+                                  value="3A_2016"
+                                  class="ng-star-inserted"
+                                >
+                                  3A - Centro di microzonazione sismica Network,
+                                  2016 Central Italy seismic sequence (CentroMZ)
+                                  (3A_2016)
+                                </option>
+                                <option
+                                  value="3C_2019"
+                                  class="ng-star-inserted"
+                                >
+                                  3C - M5 Le Teil 20191111 PostSeismic
+                                  (LeTeilPostSeismic) (3C_2019)
+                                </option>
+                                <option
+                                  value="3D_2021"
+                                  class="ng-star-inserted"
+                                >
+                                  3D - INGV temporary network for seismic
+                                  monitoring of the island of Vulcano to
+                                  increase volcanic activity (Sicily, Italy)
+                                  (VITN) (3D_2021)
+                                </option>
+                                <option
+                                  value="3H_2009"
+                                  class="ng-star-inserted"
+                                >
+                                  3H - Norcia basin (Italy) temporary network
+                                  (3H_2009)
+                                </option>
+                                <option
+                                  value="4A_2009"
+                                  class="ng-star-inserted"
+                                >
+                                  4A - Emersito Seismic Network for Site Effect
+                                  Studies in L_Aquila town (Central Italy)
+                                  (ESSEA) (4A_2009)
+                                </option>
+                                <option
+                                  value="4C_2011"
+                                  class="ng-star-inserted"
+                                >
+                                  4C - NERA-JRA1-A (4C_2011)
+                                </option>
+                                <option
+                                  value="7F_2021"
+                                  class="ng-star-inserted"
+                                >
+                                  7F - Snow Avalanche Seismic Monitoring around
+                                  Sibilla Mount (Central Italy) (Snowbilla)
+                                  (7F_2021)
+                                </option>
+                                <option
+                                  value="8C_2019"
+                                  class="ng-star-inserted"
+                                >
+                                  8C - Mont-Blanc (Mont-Blanc) (8C_2019)
+                                </option>
+                                <option
+                                  value="9A_2013"
+                                  class="ng-star-inserted"
+                                >
+                                  9A - East Texas Earthquake Monitoring (ETXEQ)
+                                  (9A_2013)
+                                </option>
+                                <option value="A" class="ng-star-inserted">
+                                  A - Generic Asian Strong Motion Network
+                                </option>
+                                <option value="AB" class="ng-star-inserted">
+                                  AB - National Seismic Network of Azerbaijan
+                                </option>
+                                <option value="AC" class="ng-star-inserted">
+                                  AC - Albanian Seismological Network (AC)
+                                </option>
+                                <option value="BA" class="ng-star-inserted">
+                                  BA - UniBAS
+                                </option>
+                                <option value="BS" class="ng-star-inserted">
+                                  BS - National Seismic Network of Bulgaria (BS)
+                                </option>
+                                <option value="BW" class="ng-star-inserted">
+                                  BW - BayernNetz (BW)
+                                </option>
+                                <option value="C4" class="ng-star-inserted">
+                                  C4 - CERN Seismic Network
+                                </option>
+                                <option value="CA" class="ng-star-inserted">
+                                  CA - Catalan Seismic Network (CA)
+                                </option>
+                                <option value="CH" class="ng-star-inserted">
+                                  CH - Switzerland Seismological Network
+                                </option>
+                                <option value="CL" class="ng-star-inserted">
+                                  CL - Corinth Riff Laboratory (CRLNET)
+                                </option>
+                                <option value="CQ" class="ng-star-inserted">
+                                  CQ - Cyprus Broadband Seismological Network
+                                </option>
+                                <option value="CR" class="ng-star-inserted">
+                                  CR - Croatian Seismograph Network (CSN)
+                                </option>
+                                <option value="CZ" class="ng-star-inserted">
+                                  CZ - Czech Regional Seismic Network (CZ)
+                                </option>
+                                <option value="E" class="ng-star-inserted">
+                                  E - Rete ENEA
+                                </option>
+                                <option value="ES" class="ng-star-inserted">
+                                  ES - Spanish Digital Seismic Network
+                                </option>
+                                <option value="EU" class="ng-star-inserted">
+                                  EU - Generic European Strong Motion Network
+                                </option>
+                                <option value="FC" class="ng-star-inserted">
+                                  FC - Generic African Strong Motion Network
+                                </option>
+                                <option value="FR" class="ng-star-inserted">
+                                  FR - RESIF and other broad-band and
+                                  accelerometric permanent networks in
+                                  metropolitan France (RESIF)
+                                </option>
+                                <option value="G" class="ng-star-inserted">
+                                  G - GEOSCOPE
+                                </option>
+                                <option value="GE" class="ng-star-inserted">
+                                  GE - GEOFON
+                                </option>
+                                <option value="GO" class="ng-star-inserted">
+                                  GO - National Seismic Network of Georgia
+                                </option>
+                                <option value="GR" class="ng-star-inserted">
+                                  GR - German Regional Seismic Network (GR)
+                                </option>
+                                <option value="GU" class="ng-star-inserted">
+                                  GU - Regional Seismic Network of North Western
+                                  Italy (RSNI)
+                                </option>
+                                <option value="HA" class="ng-star-inserted">
+                                  HA - Hellenic Seismological Network,
+                                  University of Athens, Seismological Laboratory
+                                  (HA)
+                                </option>
+                                <option value="HC" class="ng-star-inserted">
+                                  HC - Seismological Network of Crete (HC)
+                                </option>
+                                <option value="HI" class="ng-star-inserted">
+                                  HI - ITSAK Strong Motion Network
+                                </option>
+                                <option value="HL" class="ng-star-inserted">
+                                  HL - National Observatory of Athens Seismic
+                                  Network
+                                </option>
+                                <option value="HP" class="ng-star-inserted">
+                                  HP - University of Patras, Seismological
+                                  Laboratory (PSLNET)
+                                </option>
+                                <option value="HT" class="ng-star-inserted">
+                                  HT - Aristotle University of Thessaloniki
+                                  Seismological Network
+                                </option>
+                                <option value="IE" class="ng-star-inserted">
+                                  IE - INL Seismic Monitoring Program
+                                </option>
+                                <option value="IP" class="ng-star-inserted">
+                                  IP - Instituto Superior Tecnico Broadband
+                                  Seismic Network (ISTBSN)
+                                </option>
+                                <option value="IS" class="ng-star-inserted">
+                                  IS - Israel National Seismic Network
+                                </option>
+                                <option value="IT" class="ng-star-inserted">
+                                  IT - Italian Strong Motion Network (RAN)
+                                </option>
+                                <option value="IU" class="ng-star-inserted">
+                                  IU - Global Seismograph Network - IRIS/USGS
+                                  (GSN)
+                                </option>
+                                <option value="IV" class="ng-star-inserted">
+                                  IV - Italian National Seismic Network (INSN)
+                                </option>
+                                <option value="IX" class="ng-star-inserted">
+                                  IX - Irpinia Seismic Network (ISNet)
+                                </option>
+                                <option value="IY" class="ng-star-inserted">
+                                  IY - Rete Sismica Unical
+                                </option>
+                                <option value="KO" class="ng-star-inserted">
+                                  KO - Bogazici University Kandilli Observatory
+                                  And Earthquake Research Institute (KOERI)
+                                </option>
+                                <option value="LC" class="ng-star-inserted">
+                                  LC - LSC (Laboratorio Subterraneo Canfranc)
+                                </option>
+                                <option value="LE" class="ng-star-inserted">
+                                  LE - Landeserdbebendienst Baden-Wuerttemberg
+                                </option>
+                                <option value="MA" class="ng-star-inserted">
+                                  MA - Macedonian Seismological Network
+                                </option>
+                                <option value="MD" class="ng-star-inserted">
+                                  MD - Moldova Digital Seismic Network
+                                </option>
+                                <option value="MN" class="ng-star-inserted">
+                                  MN - Mediterranean Very Broadband
+                                  Seismographic Network (MedNet)
+                                </option>
+                                <option value="MT" class="ng-star-inserted">
+                                  MT - French Landslide Observatory / OMIV:
+                                  Permanent seismological records on unstable
+                                  slopes (OMIV)
+                                </option>
+                                <option value="NI" class="ng-star-inserted">
+                                  NI - North-East Italy Broadband Network (NI)
+                                </option>
+                                <option value="NL" class="ng-star-inserted">
+                                  NL - Netherlands Seismic and Acoustic Network
+                                  (KNMI/ORFEUS)
+                                </option>
+                                <option value="NS" class="ng-star-inserted">
+                                  NS - University of Bergen Seismic Network
+                                  (NNSN)
+                                </option>
+                                <option value="OE" class="ng-star-inserted">
+                                  OE - Austrian Seismic Network
+                                </option>
+                                <option value="OQ" class="ng-star-inserted">
+                                  OQ - Oklahoma Structural and Site Effects
+                                  Network (OKSSEN)
+                                </option>
+                                <option value="OT" class="ng-star-inserted">
+                                  OT - OTRIONS (OTRIONS)
+                                </option>
+                                <option value="OX" class="ng-star-inserted">
+                                  OX - North-East Italy Seismic Network
+                                </option>
+                                <option value="RA" class="ng-star-inserted">
+                                  RA - Reseau Accelerometrique Permanent (French
+                                  Accelerometrique Network) (RAP)
+                                </option>
+                                <option value="RF" class="ng-star-inserted">
+                                  RF - Friuli Venezia Giulia Accelerometric
+                                  Network (RF)
+                                </option>
+                                <option value="RO" class="ng-star-inserted">
+                                  RO - Romanian Seismic Network (NIEP)
+                                </option>
+                                <option value="RR" class="ng-star-inserted">
+                                  RR - Reti accelerometriche centri storici
+                                  italiani (RACSI)
+                                </option>
+                                <option value="S" class="ng-star-inserted">
+                                  S - Seismographs in Schools Network
+                                </option>
+                                <option value="SI" class="ng-star-inserted">
+                                  SI - Province Sudtirol
+                                </option>
+                                <option value="SL" class="ng-star-inserted">
+                                  SL - Seismic Network of the Republic of
+                                  Slovenia (SNRS)
+                                </option>
+                                <option value="SM" class="ng-star-inserted">
+                                  SM - Icelandic Strong Motion Network
+                                </option>
+                                <option value="ST" class="ng-star-inserted">
+                                  ST - Trentino Seismic Network
+                                </option>
+                                <option value="TH" class="ng-star-inserted">
+                                  TH - Thuringer Seismologisches Netz (TSN)
+                                </option>
+                                <option value="TK" class="ng-star-inserted">
+                                  TK - Turkish National Strong Motion Network
+                                  (TNSMN)
+                                </option>
+                                <option value="TV" class="ng-star-inserted">
+                                  TV - INGV experiments network
+                                </option>
+                                <option value="UZ" class="ng-star-inserted">
+                                  UZ - Uzbekistan Digital Seismic Network
+                                </option>
+                                <option value="WM" class="ng-star-inserted">
+                                  WM - Western Mediterranean Seismic Network
+                                </option>
+                                <option
+                                  value="X3_2020"
+                                  class="ng-star-inserted"
+                                >
+                                  X3 - INGV SISMIKO emergency seismic network
+                                  for Salemi-Italy (ISesnSI) (X3_2020)
+                                </option>
+                                <option
+                                  value="XK_2020"
+                                  class="ng-star-inserted"
+                                >
+                                  XK - Temporary network seismic in Central
+                                  Calabria (TeCC) (XK_2020)
+                                </option>
+                                <option
+                                  value="XO_2016"
+                                  class="ng-star-inserted"
+                                >
+                                  XO - Seismic Network for Site Effect Studies
+                                  in Amatrice Area (Central Italy) (SESAA)
+                                  (XO_2016)
+                                </option>
+                                <option
+                                  value="XQ_2015"
+                                  class="ng-star-inserted"
+                                >
+                                  XQ - Rapid response to the Mw 7.9 earthquake
+                                  of April 25, 2015 in Nepal (RAPID: Nepal
+                                  Earthquake) (XQ_2015)
+                                </option>
+                                <option
+                                  value="XS_2010"
+                                  class="ng-star-inserted"
+                                >
+                                  XS - Maule Earthquake (Chile) Aftershock
+                                  Experiment (MAULE) (XS_2010)
+                                </option>
+                                <option
+                                  value="XY_2010"
+                                  class="ng-star-inserted"
+                                >
+                                  XY - RAMP response for 2010 Chile earthquake
+                                  (Chile RAMP) (XY_2010)
+                                </option>
+                                <option
+                                  value="Y3_2008"
+                                  class="ng-star-inserted"
+                                >
+                                  Y3 - Wells, Nevada Aftershock Recording (RAMP
+                                  NV) (Y3_2008)
+                                </option>
+                                <option
+                                  value="YB_2010"
+                                  class="ng-star-inserted"
+                                >
+                                  YB - Haiti Earthquake Aftershock Experiment
+                                  (HEART) (YB_2010)
+                                </option>
+                                <option
+                                  value="YD_2003"
+                                  class="ng-star-inserted"
+                                >
+                                  YD -
+                                  Calabria-Appennine-Tyrrhenian/Subduction-Collision-Accretion
+                                  Network (CATSCAN) (YD_2003)
+                                </option>
+                                <option
+                                  value="YI_2003"
+                                  class="ng-star-inserted"
+                                >
+                                  YI - Retreating-Trench, Extension, and
+                                  Accretion LTectonics: A Multidisciplinary
+                                  Study of the Northern Apennines (RETREAT)
+                                  (YI_2003)
+                                </option>
+                                <option
+                                  value="YK_2019"
+                                  class="ng-star-inserted"
+                                >
+                                  YK - Pocrisc (Pocrisc) (YK_2019)
+                                </option>
+                                <option
+                                  value="YN_2010"
+                                  class="ng-star-inserted"
+                                >
+                                  YN - San Jacinto Fault Zone Experiment (SJFZ)
+                                  (YN_2010)
+                                </option>
+                                <option
+                                  value="YP_2014"
+                                  class="ng-star-inserted"
+                                >
+                                  YP - Argostoli earthquake aftershock
+                                  experiment (YP_2014)
+                                </option>
+                                <option
+                                  value="YX_2008"
+                                  class="ng-star-inserted"
+                                >
+                                  YX - Seismology Rapid Response Test During the
+                                  SoSAF Shakeout (SoSAF) (YX_2008)
+                                </option>
+                                <option
+                                  value="Z1_2016"
+                                  class="ng-star-inserted"
+                                >
+                                  Z1 - Seismic Triggering Response for
+                                  Earthquakes around Wellington NZ (STREWN)
+                                  (Z1_2016)
+                                </option>
+                                <option
+                                  value="Z3_2015"
+                                  class="ng-star-inserted"
+                                >
+                                  Z3 - AlpArray (Z3_2015)
+                                </option>
+                                <option
+                                  value="ZB_2017"
+                                  class="ng-star-inserted"
+                                >
+                                  ZB - Rapid Aftershock Deployment for the
+                                  September 2017 M=8.1 and M.7.1 Earthquakes in
+                                  Mexico (RADSEM) (RAPID Mexico) (ZB_2017)
+                                </option>
+                                <option
+                                  value="ZH_2021"
+                                  class="ng-star-inserted"
+                                >
+                                  ZH - INGV SISMIKO Emergency Seismic Network
+                                  (ISESN) (ZH_2021)
+                                </option>
+                                <option
+                                  value="ZM_2017"
+                                  class="ng-star-inserted"
+                                >
+                                  ZM - Seismic Emergency for Ischia by Sismiko
+                                  (SEISk) (ZM_2017)
+                                </option>
+                                <option
+                                  value="ZN_2004"
+                                  class="ng-star-inserted"
+                                >
+                                  ZN - SISMOVALP (ZN_2004)
+                                </option>
+                                <option
+                                  value="ZO_2021"
+                                  class="ng-star-inserted"
+                                >
+                                  ZO - Dynamic Planet (PD) multiparametric
+                                  Northern Italy seismic network (PDNET)
+                                  (ZO_2021)
+                                </option>
+                                <option
+                                  value="ZY_1990"
+                                  class="ng-star-inserted"
+                                >
+                                  ZY - Portable Southern California Seismic
+                                  Networks (Caltech) (ZY_1990)
+                                </option>
+                              </select>
+                            </div>
+                          </div>
+                          <br />
+                          <div class="row">
+                            <div class="col-sm-6">
+                              <label for="">Station code</label>
+                              <input
+                                class="form-control"
+                                type="text"
+                                placeholder="contains"
+                              />
+                            </div>
+                          </div>
+                          <hr />
+                          <div class="row">
+                            <div class="col-sm-6">
+                              <button class="btn btn-primary">Search</button>
+                              <button class="btn btn-success">
+                                New search
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="p-2">
+                    
+                      
+                   
+                    <div class="gmap_canvas"><iframe style="border-radius:15px ;"  width="600" height="600" id="gmap_canvas" src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                      <a href="https://123movies-to.org"></a><br><style>.mapouter{position:relative;text-align:right;height:600px;width:580px; border-radius: 15px;}</style><a href="https://www.embedgooglemap.net">how to embed a google map in html</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:600px;width:580px; border: radius 15px; ;}</style></div></div>
+                  </div>
+                      <div class="flrx-row">
+                        <button style="float:right;margin-bottom:5px ;" class="btn btn-primary">Export in Google Earth Format</button>
+                        <table  class="table"   style="table-layout: fixed; ">
+                          <thead class="thead-dark">
+                            <tr class="event" >
+                              <th  scope="col">Date</th>
+                              <th scope="col">Event name</th>
+                              <th scope="col">Country</th>
+                              <th scope="col">Municipality</th>
+                              <th scope="col">Latitude</th>
+                              <th scope="col">Longitude</th>
+                              <th scope="col">Depth[Km]</th>
+                              <th scope="col">Handle</th>
+                              <th scope="col">ML</th>
+                              <th scope="col">MW</th>
+                              <th scope="col">Style of faulting</th>
+                              <th scope="col">Waveforms</th>
+                              <th scope="col">ESM ID</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <th scope="row">1</th>
+                              <td>Mark</td>
+                              <td>Otto</td>
+                              <td>mdo</td>
+                              <td>Mark</td>
+                              <td>Otto</td>
+                              <td>mdo</td>
+                              <td>Mark</td>
+                              <td>Otto</td>
+                              <td>mdo</td>
+                              <td>Mark</td>
+                              <td>Otto</td>
+                              <td>mdo</td>
+
+
+
+                            </tr>
+                            <tr>
+                              <th scope="row">1</th>
+                              <td>Mark</td>
+                              <td>Otto</td>
+                              <td>mdo</td>
+                              <td>Mark</td>
+                              <td>Otto</td>
+                              <td>mdo</td>
+                              <td>Mark</td>
+                              <td>Otto</td>
+                              <td>mdo</td>
+                              <td>Mark</td>
+                              <td>Otto</td>
+                              <td>mdo</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">1</th>
+                              <td>Mark</td>
+                              <td>Otto</td>
+                              <td>mdo</td>
+                              <td>Mark</td>
+                              <td>Otto</td>
+                              <td>mdo</td>
+                              <td>Mark</td>
+                              <td>Otto</td>
+                              <td>mdo</td>
+                              <td>Mark</td>
+                              <td>Otto</td>
+                              <td>mdo</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                </div>
+              </div>
+            </div>
